@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ROOT STYLE   -->
+    <link rel="stylesheet" href="../../styles/root.css">
+    <!--  STYLE OF THE PAGE   -->
+    <link rel="stylesheet" href="style.css">
+    <title>Position</title>
+</head>
+
+
+<body>
+
+    <header>
+        <img id="logo" src="../../assets/logo.png" alt="">
+        <nav class="pages--navigation">
+            <ul>
+                <li><a href="../text-Styling/text-Styling.html">
+                        <span class="material-icons">
+                            text_format
+                        </span>
+                        text
+                    </a>
+                </li>
+                <li><a href="../grid/grid.html">
+                        <span class="material-icons">
+                            space_dashboard
+                        </span>
+                        grid
+                    </a>
+                </li>
+                <li><a href="../flexbox/flexbox.html">
+                        <span class="material-icons">
+                            view_day
+                        </span>
+                        flexbox
+                    </a>
+                </li>
+                <li><a class="active" href="../CSS Posotion/position.html">
+                        <span class="material-icons">
+                            add_location
+                        </span>
+                        position
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 class="article--title">CSS Position-Eigenschaft</h2>
+            <section id="introductIon">
+                <h3 class="section--title">Einleitung</h3>
+                <p class="section--description">
+                    Die position-Eigenschaft in CSS wird verwendet, um die Positionierung eines Elements auf einer Webseite 
+                    zu steuern. Sie definiert, wie ein Element relativ zu seinem normalen Fluss im Dokument positioniert werden soll.
+                    Zum Steuern der nicht statischen Elmente nutzt man die Eigenschaften: top, bottom, left und right um damit den Abstand
+                    anzugeben wie das Element in Abhängigkeit platziert werden soll.
+                </p>
+            </section>
+            <!--//////////////// STATIC ////////////////// -->
+            <section id="static">
+                <h3 class="section--title">static</h3>
+                <p class="section--description">
+                    Static ist der Standardwert der position Eigenschaft. Das Element folgt hierbei dem normalen Fluss des Dokuments.
+                </p>
+                <div class="example--container ">
+                    <div id="example-static">
+                          <p>static</p>  
+                    </div>
+                </div>
+            </section>
+            <!--//////////////// RELATIVE ////////////////// -->
+            <section id="relative">
+                <h3 class="section--title">relative</h3>
+                <p class="section--description">
+                    Das Element wird relativ zu seiner normalen Position verschoben.
+                    Andere Elemente im normalen Fluss werden nicht beeinflusst.    
+                    In dieseim Beispiel wird das Element 100px nach rechts verschoben.
+                </p>
+                <div class="example--container ">
+                    <div id="example-relative">
+                        <p>relative</p>
+                    </div>
+                </div>
+            </section>
+            <!--//////////////// ABSOLUTE ////////////////// -->
+            <section id="absolute">
+                <h3 class="section--title">absolute</h3>
+                <p class="section--description">
+                    Das Element wird relativ zum nächstgelegenen positionierten (nicht statischen) Elternelement positioniert.
+                    Wenn kein positioniertes Elternelement vorhanden ist, wird es relativ zum HTML-Element positioniert.   
+                    Das Beispiel ist eine absolutes div in einem relativen div.
+                </p>
+                <div class="example--container ">
+                    <div id="example-relative2">
+                        <div id="example-absolute">
+                            <p>absolute</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--//////////////// FIXED ////////////////// -->
+            <section id="fixed">
+                <h3 class="section--title">fixed</h3>
+                <p class="section--description">
+                    Das Element wird relativ zum Browserfenster positioniert und bleibt immer an derselben Stelle, 
+                    auch wenn die Seite gescrollt wird. 
+                    Das Beispiel hierfür ist am unteren rechten Bildschirmrand zu finden.
+                </p>
+                <div class="example--container ">
+                    <div id="example-fixed">
+                        <p>fixed</p>
+                    </div>
+                </div>
+            </section>
+            <!--//////////////// STICKY ////////////////// -->
+            <section id="sticky">
+                <h3 class="section--title">sticky</h3>
+                <p class="section--description">
+                    Ein Hybrid zwischen relative und fixed. Das Element wird relativ zum Viewport positioniert, 
+                    bis es einen bestimmten Scrollpunkt erreicht, dann wird es fixiert.    
+                    Wenn man den folgenden Text runterscrollt wird das sticky Element oben festgehalten und bleibt dort.
+                </p>
+                <div class="example--container ">
+                    <div id="sticky-container">
+                        <div id="example-sticky">
+                            <p>
+                                sticky
+                            </p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+                            
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+                            
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                            
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                            
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.   
+                            
+                            Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.   
+                            
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+                            
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+                            
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        </p>
+                    </div>
+                </div>
+            </section>
+        <aside>
+            <nav>
+                <ul>
+                    <li> <a href="#introductIon">einleitung</a> </li>
+                    <li> <a href="#static">static</a> </li>
+                    <li><a href="#relative">relative</a></li>
+                    <li><a href="#absolute">absolute</a></li>
+                    <li><a href="#fixed">fixed</a></li>
+                    <li><a href="#sticky">sticky</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer> @Finn Vissering </footer>
+</body>
+
+
+</html>

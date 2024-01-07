@@ -1,0 +1,89 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1px var(--headerBoxShadowColor);
+    padding: 0 3%;
+}
+
+header #logo {
+    width: 100px;
+    display: block;
+}
+
+header .pages--navigation {
+    width: 55%;
+}
+
+
+/*-------- NAV ELEMENTS  -------- */
+header .pages--navigation ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .pages--navigation ul a,
+header .pages--navigation ul a::after {
+    transition: all .5s;
+}
+
+header .pages--navigation ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 10px;
+    min-width: 80px;
+    border-radius: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--secondaryColor);
+    position: relative;
+    overflow: hidden;
+}
+
+header .pages--navigation ul a::after {
+    content: "";
+    position: absolute;
+    padding: 100% 0%;
+    left: 0%;
+    z-index: -1;
+    background: linear-gradient(80deg, var(--linearColor))
+}
+
+
+
+/*-------HOVER AND ACTIVE EFFECTS OF NAV ELEMENTS--------- */
+header .pages--navigation ul a:hover::after {
+    padding: 100%;
+}
+
+header .pages--navigation ul a:hover,
+header .pages--navigation ul .active {
+    color: var(--primaryColor);
+}
+
+header .pages--navigation ul .active {
+    background: linear-gradient(80deg, var(--linearColor));
+    animation: headerItems 3s infinite linear;
+}
+
+/*-------ANIMATION OF NAV ELEMENTS--------- */
+@keyframes headerItems {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

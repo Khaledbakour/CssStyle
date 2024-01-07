@@ -1,0 +1,86 @@
+:root{
+
+ 
+    --secondaryColor: rgb(3, 183, 3);
+    --thirtyColor: rgb(90, 189, 90);
+    --articleColor: rgb(156, 196, 156);
+
+}
+
+.example--container {
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  #example-static {
+    background-color: var(--articleColor);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: static;
+  }
+  
+  #example-relative {
+    background-color: var(--articleColor);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+  }
+
+  #example-relative2 {
+    background-color: var(--articleColor);
+    border: 1px solid black;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+  }
+
+  #example-absolute {
+    background-color: var(--articleColor);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+  
+  #example-fixed {
+    background-color: var(--articleColor);
+    border-radius: 10px;
+    border: 1px solid black;
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    bottom: 0%;
+    right: 10px;
+    height: 40px;
+    width: 80px;
+  }
+  
+  #sticky-container {
+    height: 200px; 
+    overflow-y: scroll;
+  }
+  
+  #example-sticky {
+    background-color: var(--articleColor);
+    border: 1px solid black;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;  
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  

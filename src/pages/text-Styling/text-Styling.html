@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../styles/root.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Hausarbeit/src/pages/text-Styling/style.css">
+    <script src="https://kit.fontawesome.com/ce3bbc6950.js" crossorigin="anonymous"></script>
+    <title>Beispiel</title>
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <img id="logo" src="../../assets/logo.png" alt="">
+
+        <nav class="pages--navigation">
+            <ul>
+                <li><a class="active" href="../text-Styling/text-Styling.html">
+                        <span class="material-icons">
+                            text_format
+                        </span>
+                        text
+
+                    </a>
+                </li>
+                <li><a href="../grid/grid.html">
+                        <span class="material-icons">
+                            space_dashboard
+                        </span>
+                        grid
+
+                    </a>
+                </li>
+                <li><a href="../flexbox/flexbox.html">
+                        <span class="material-icons">
+                            view_day
+                        </span>
+                        flexbox
+
+                    </a>
+                </li>
+                <li><a href="../CSS Posotion/position.html">
+                        <span class="material-icons">
+                           add_location
+                        </span>
+                        position
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 class="article--title">text-styling </h2>
+            <section id="erklaerung">
+                <h3 class="section--title">Einleitung</h3>
+                <p class="section--description">CSS bietet eine breite Palette von Eigenschaften zur Formatierung von
+                    Text, mit denen Sie das Aussehen des Texts auf verschiedene Weise steuern können. Diese
+                    Eigenschaften können verwendet werden, um die Schriftart, Größe, Farbe, Gewichtung, Ausrichtung und
+                    vieles mehr zu ändern</p>
+            </section>
+            <section id="color">
+                <h3 class="section--title">Color & Background color</h3>
+                <div class="section--description">
+                    <p>
+                        Mit der <code>Color</code>-Eigenschaft
+                        können Sie die Farbe und die Hintergrundfarbe der Schrift ändern.
+                    </p>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>color</code>
+                        <p>
+                            Hier haben wir zum Beispiel die Farbe rot verwendet, um die Schriftfarbe in rot zu ändern
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">color:</span> red<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <span class="span1">Hello world!</span>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Background-color: white</code>
+                        <p>
+                            Hier haben wir die Hintergrundfarbe weiß verwendet,
+                            um die Hintergrundfarbe der Schrift zu ändern.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">Background-color:</span> white; }
+                        </code>
+                        <hr>
+                        <span class="span2">Hello world!</span>
+                    </div>
+                    <div class="example--container">
+                        <div class="example--description">
+                            <code>RGB-Modell</code>
+                            <p>
+                                Im RGB-Farbschema kann jede Farbe durch die genaue Kombination der Primärfarben
+                                <strong>Rot (R), Grün (G) und Blau (B)</strong> definiert werden.
+                                Auf diese Weise ermöglicht Ihnen das RGB-Modell, rund 16,7 Millionen unterschiedliche
+                                Farben für die Gestaltung Ihrer Website zu definieren.
+                                Folgende Grafik zeigt die RGB-Werte für die Standardfarben Schwarz, Weiß, Rot, Blau,
+                                Grün, Gelb, Magenta, Cyan, Violett und Orange:
+                            </p>
+                        </div>
+                        <div class="example">
+                            <img src="RGB-Farbwerte.png" alt="Foto von RGB-Modell">
+                        </div>
+                    </div>
+                    <div class="example--container">
+                        <div class="example--description">
+                            <code>Hexadezimale Farbcodes</code>
+                            <p>
+                                Das Grundschema eines hexadezimalen Farbcodes besteht aus einem Hashtag (#) gefolgt von
+                                sechs Hexadezimalzahlen,
+                                die in Zweierblöcken je eine Farbe des RGB-Farbraums (Rot, Grün, Blau) repräsentieren:
+                                #FFFFFF
+                            </p>
+                        </div>
+                        <div class="example">
+                            <img src="/Hausarbeit/src/pages/text-Styling/css-hexadezimale.png"
+                                alt="Foto von Hexadezimale Farbcodes">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="family">
+                <h3 class="section--title">font-family</h3>
+                <p class="section--description"> Die <code>font-family</code>-Eigenschaft
+                    in CSS spezifiziert eine priorisierte Liste von einer oder mehreren Schriftfamilien und/oder
+                    generischen Familiennamen für das ausgewählte Element.
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Web-Safe Fonts</code>
+                        <p>
+                            Web-Safe Fonts sind Schriftarten, die auf den meisten Betriebssystemen vorinstalliert sind.
+                            Sie sind so gestaltet,
+                            dass sie auf jedem Gerät und in jedem Browser korrekt angezeigt werden.
+                            Durch die Verwendung dieser Schriftarten stellen Webdesigner und Entwickler sicher,
+                            dass die beabsichtigte Schriftart immer korrekt auf einer Webseite angezeigt wird,
+                            selbst wenn diese Schriftarten nicht auf dem Computer des Benutzers installiert sind.
+                        </p>
+                        <br>
+                        <br>
+                        <p>Die folgenden Schriftarten sind die besten Web-Safe Fonts für HTML und CSS</p>
+                        <br>
+                        <ul>
+                            <li>Arial</li>
+                            <li>Verdana</li>
+                            <li>Times New Roman</li>
+                            <li>Georgia</li>
+                            <li>Courier New</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2"> { </span><span class="codee">font-family:</span> Courier New<span class="select2">,</span> monospace<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <span class="span3">Hello world!</span>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Default Fonts</code>
+                        <p>In CSS gibt es fünf generische Schriftfamilien:</p>
+                        <br>
+                        <ul>
+                            <li>Serifenschriften haben einen kleinen Strich an den Rändern jedes Buchstabens. Sie
+                                vermitteln ein Gefühl von Formalität und Eleganz.</li>
+                            <li>Serifenlose Schriftarten haben klare Linien (ohne kleine Striche). Sie vermitteln ein
+                                modernes und minimalistisches Aussehen.</li>
+                            <li>Monospace-Schriften - hier haben alle Buchstaben die gleiche feste Breite. Sie erzeugen
+                                ein mechanisches Aussehen. </li>
+                            <li>Kursive Schriftarten imitieren die menschliche Handschrift.</li>
+                            <li>Fantasy-Schriften sind dekorative/verspielte Schriftarten.</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <img src="/Hausarbeit/src/pages/text-Styling/serif.png" alt="Foto von Default Fonts">
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="Size">
+                <h3 class="section--title">font-size</h3>
+                <p class="section--description"> Die <code>font-size</code>-Eigenschaft
+                    in CSS bestimmt die Größe der Schrift. Es gibt verschiedene Methoden, um die Schriftgröße in CSS
+                    festzulegen:
+                </p>
+                <div class="example--container2">
+                    <div class="example--description2">
+                        <code>Pixel</code>
+                        <p>
+                            Die Festlegung der Textgröße mit Pixeln gibt Ihnen die volle Kontrolle über die Textgröße.
+                            Zum Beispiel:
+                        </p>
+                        <br>
+                        <p>Die folgenden Schriftarten sind die besten Web-Safe Fonts für HTML und CSS</p>
+
+                    </div>
+                    <div class="example2">
+                        <table class="table1">
+                            <tr>
+                                <th>Absolut</th>
+                                <th>Beschreibung</th>
+                                <th>Beispiel</th>
+                            </tr>
+                            <tr>
+                                <td>xx-small</td>
+                                <td>winzig</td>
+                                <td>9px</td>
+                            </tr>
+                            <tr>
+                                <td>x-small</td>
+                                <td>sehr klein</td>
+                                <td>10px</td>
+                            </tr>
+                            <tr>
+                                <td>small</td>
+                                <td>klein</td>
+                                <td>13px</td>
+                            </tr>
+                            <tr>
+                                <td>medium</td>
+                                <td>mittel (voreingestellte Schriftgröße des Browser)</td>
+                                <td>16px</td>
+                            </tr>
+                            <tr>
+                                <td>large</td>
+                                <td>groß</td>
+                                <td>19px</td>
+                            </tr>
+                            <tr>
+                                <td>x-large</td>
+                                <td>sehr groß</td>
+                                <td>24px</td>
+                            </tr>
+                            <tr>
+                                <td>xx-large</td>
+                                <td>riesig</td>
+                                <td>32px</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="example--container2">
+                    <div class="example--description2">
+                        <code>Em</code>
+                        <p>Em: Viele Entwickler verwenden em anstelle von Pixeln,
+                            um den Benutzern zu ermöglichen, den Text in der Browsereinstellung zu vergrößern oder zu
+                            verkleinern.
+                            1em entspricht der aktuellen Schriftgröße. Die Standardeinstellung für die Textgröße in den
+                            Browsern beträgt 16px.
+                            Daher ist die Standardgröße von 1em 16px.
+                            Die Größe kann von Pixeln zu em mit dieser Formel berechnet werden: pixels /16= em</p>
+                        <br>
+                    </div>
+                    <div class="example2">
+                        <code>
+                            <p><span class="select1">h1</span> <span class="select2">{</span> <span class="codee">font-size:</span> 2.5em<span class="select2">;</span> <span class="comment">/* 40px/16=2.5em */</span> <span class="select2">}</span></p>
+                            <br>
+                            <p><span class="select1">h2</span> <span class="select2">{</span> <span class="codee">font-size:</span> 1.875em<span class="select2">;</span> <span class="comment">/* 30px/16=1.875em */</span> <span class="select2">}</span></p>
+                            <br>
+                            <p><span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-size:</span> 0.875em<span class="select2">;</span> <span class="comment">/* 14px/16=0.875em */</span> <span class="select2">}</span></p>
+                        </code>
+                    </div>
+                </div>
+                <div class="example--container2">
+                    <div class="example--description2">
+                        <code>Prozent & Em</code>
+                        <p>Prozent und Em: Eine Lösung, die in allen Browsern funktioniert, besteht darin, eine
+                            Standard-Schriftgröße in Prozent für das <strong>&lt;body&gt;</strong>-Element festzulegen
+                        </p>
+                        <br>
+                    </div>
+                    <div class="example2">
+                        <code>
+                            <p><span class="select1">body</span> <span class="select2">{</span> <span class="codee">font-size:</span> 100%<span class="select2">; }</span></p>
+                            <br>
+                            <p><span class="select1">h1</span> <span class="select2">{</span> <span class="codee">font-size:</span> 2.5em<span class="select2">; }</span></p>
+                            <br>
+                            <p><span class="select1">h2</span> <span class="select2">{</span> <span class="codee">font-size:</span> 1.875em<span class="select2">; }</span></p>
+                            <br>
+                            <p><span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-size:</span> 0.875em<span class="select2">; }</span></p>
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="style">
+                <h3 class="section--title">font-style</h3>
+                <p class="section--description"> Die <code>font-style</code>-Eigenschaft
+                    in CSS wird hauptsächlich verwendet, um kursiven Text anzugeben. Diese Eigenschaft hat drei Werte:
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Normal</code>
+                        <p>
+                            Der Text wird normal dargestellt.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-style:</span> normal<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Hallostyle">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Italic</code>
+                        <p>Der Text wird in Kursivschrift dargestellt.</p>
+                        <br>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-style:</span> italic<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Hallostyle2">
+                            Hello world!
+                        </p>
+
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Oblique</code>
+                        <p>
+                            Der Text wird “geneigt” dargestellt (Oblique ist sehr ähnlich zu Italic, wird aber weniger
+                            unterstützt).
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-style:</span> oblique<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Hallostyle3">Hello world!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Weight">
+                <h3 class="section--title">font-weight</h3>
+                <p class="section--description"> Die <code>font-weight</code>-Eigenschaft
+                    in CSS bestimmt die Dicke oder den Grad der Fettschrift. Hier sind die Werte, die Sie verwenden
+                    können:
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Normal</code>
+                        <p>
+                            Definiert normale Zeichen. Dies ist der Standardwert
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-weight:</span> normal<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Halloweight">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Bold</code>
+                        <p>Definiert dicke Zeichen</p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-weight:</span> bold<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Halloweight2">
+                            Hello world!
+                        </p>
+
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Oblique</code>
+                        <p>
+                            Der Text wird “geneigt” dargestellt (Oblique ist sehr ähnlich zu Italic, wird aber weniger
+                            unterstützt).
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-style:</span> oblique<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Hallostyle3">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container2">
+                    <div class="example--description2">
+                        <code>Zahlenwerte</code>
+                        <p>
+                            Ein Zahlenwert zwischen 1 und 1000, beide Werte eingeschlossen.
+                            Höhere Zahlen stellen Gewichte dar, die fetter sind als (oder genauso fett wie) niedrigere
+                            Zahlen.
+                            Dies ermöglicht eine feine Kontrolle für variable Schriften.
+                            Bei nicht variablen Schriften wird,
+                            wenn das genau angegebene Gewicht nicht verfügbar ist,
+                            ein Ausweichgewichtsalgorithmus verwendet
+                        </p>
+                    </div>
+                    <div class="example2">
+                        <table class="table2">
+                            <tr>
+                                <td>font-weight</td>
+                                <td>100</td>
+                                <td class="td1">Thin</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>200</td>
+                                <td class="td2">Extra-light</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>300</td>
+                                <td class="td3">Light</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>400</td>
+                                <td class="td4">regular</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>500</td>
+                                <td class="td5">Medium</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>600</td>
+                                <td class="td6">Semi-Bold</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>700</td>
+                                <td class="td7">Bold</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>800</td>
+                                <td class="td8">Extra-Bold</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>900</td>
+                                <td class="td9">Black</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Lighter</code>
+                        <p>
+                            Ein relatives Schriftgewicht, das leichter ist als das des Elternelements.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-weight:</span> lighter<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Halloweight3">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Bolder</code>
+                        <p>
+                            Ein relatives Schriftgewicht, das Schwerer ist als das des Elternelements.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">font-weight:</span> bolder<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Halloweight4">Hello world!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="transform">
+                <h3 class="section--title">text-transform</h3>
+                <p class="section--description"> Die <code>text-transform</code>-Eigenschaft
+                    in CSS bestimmt, wie der Text eines Elements hinsichtlich der Groß- und Kleinschreibung dargestellt
+                    wird.
+                    Hier sind die Werte, die Sie verwenden können:
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>None / Default</code>
+                        <p>
+                            Keine Groß- oder Kleinschreibung.
+                            Der Text wird so dargestellt, wie er ist. Dies ist der Standardwert
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-transform:</span> none<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="transform1">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Capitalize</code>
+                        <p>
+                            Wandelt den ersten Buchstaben jedes Wortes in Großbuchstaben um.
+                            Andere Zeichen bleiben unverändert (sie behalten ihre ursprüngliche Schreibweise,
+                            wie sie im Text des Elements geschrieben sind)
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-transform:</span> capitalize<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <div class="arrow">
+                            <p class="transform2">hello world!</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <p class="transform2-1">hello world!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Uppercase</code>
+                        <p>
+                            Wandelt alle Zeichen in Größbuchtaben um.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-transform:</span> uppercase<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Upper1">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Lowercase</code>
+                        <p>
+                            Wandelt alle Zeichen in Kleinbuchstaben um.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-transform:</span> lowercase<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="Upper2">Hello world!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="decoration">
+                <h3 class="section--title">text-decoration</h3>
+                <p class="section--description"> Die <code>text-decoration</code>-Eigenschaft
+                    in CSS bestimmt das Aussehen von dekorativen Linien auf Text.
+                    Es ist eine Kurzschreibweise für <span>text-decoration-line</span>,
+                    <span>text-decoration-color</span>, <span>text-decoration-style</span> und die neuere Eigenschaft
+                    <span>text-decoration-thickness</span>.
+                    Hier sind die Werte, die Sie verwenden können
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>text-decoration-line</code>
+                        <p>
+                            Diese Eigenschaft wird verwendet, um eine Dekorationslinie zum Text hinzuzufügen.
+                            Sie können mehr als einen Wert kombinieren, wie overline und underline,
+                            um Linien sowohl über als auch unter einem Text anzuzeigen
+                        </p>
+                    </div>
+                    <div class="example">
+                        <div class="arrow">
+                            <code
+                                class="decoration1"><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-decoration-line:</span> overline<span class="select2">; }</span></code>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <p class="decoration1-1">Hello world!</p>
+                        </div>
+                        <hr>
+                        <div class="arrow">
+                            <code
+                                class="decoration1"><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-decoration-line:</span> underline<span class="select2">; }</span></code>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <p class="decoration1-2">Hello world!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>text-decoration-color</code>
+                        <p>
+                            Diese Eigenschaft wird verwendet, um die Farbe der Dekorationslinie festzulegen
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-decoration-line:</span> overline<span class="select2">;</span> <span class="codee">text-decoration-color:</span> red<span class="select2">;}</span>
+                        </code>
+                        <hr>
+                        <p class="decoration-color">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>text-decoration-style</code>
+                        <p>
+                            Diese Eigenschaft wird verwendet, um den Stil der Dekorationslinie festzulegen.
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-decoration-line:</span> underline<span class="select2">;</span> text-decoration-style: wavy<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="wave">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>text-decoration-thickness</code>
+                        <p>
+                            Diese Eigenschaft wird verwendet, um die Dicke der Dekorationslinie festzulegen
+                        </p>
+                    </div>
+                    <div class="example">
+                        <code>
+                            <span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-decoration-line:</span> underline<span class="select2">;</span> text-decoration-thickness: 25%<span class="select2">; }</span>
+                        </code>
+                        <hr>
+                        <p class="thickness">Hello world!</p>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>Shorthand Property</code>
+                        <p>
+                            Die text-decoration Eigenschaft ist eine Kurzschreibweise für:
+                        </p>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li><code>text-dexoration-line (erforderlich)</code></li>
+                            <li><code>text-decoration-color (optional)</code></li>
+                            <li><code>text-decoration-style (optional)</code></li>
+                            <li><code>text-decoration-thickness (optional)</code></li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <li><code><span class="select1">h1</span> <span class="select2">{</span> <span class="codee">text-decoration:</span> underline <span class="select2">;</span> <span class="select2">}</span></code>
+                            </li>
+                            <li><code><span class="select1">h2</span> <span class="select2">{</span> <span class="codee">text-decoration:</span> underline red <span class="select2">;</span> <span class="select2">}</span></code>
+                            </li>
+                            <li><code><span class="select1">h3</span> <span class="select2">{</span> <span class="codee">text-decoration:</span> underline red double<span class="select2">;</span> <span class="select2">}</span></code>
+                            </li>
+                            <li><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-decoration:</span> underline red double 5px<span class="select2">;</span> <span class="select2">}</span></code>
+                            </li>
+                        </ul>
+                        <hr>
+                        <p class="shorthand">Hello world!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="shadow">
+                <h3 class="section--title">text-shadow</h3>
+                <p class="section--description"> Die <code>text-shadow</code>- Eigenschaft in CSS fügt Textschatten
+                    hinzu.
+                    Jeder Schatten wird durch eine Kombination von X- und Y-Verschiebungen vom Element, Unschärferadius
+                    und Farbe beschrieben.
+                    <br>
+                    Hier ist die Syntax:
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>text-shadow</code>
+                        <p>
+                            In diesem Beispiel:
+                        </p>
+                        <ul class="shadow-list">
+                            <li><span>1px 1px</span> sind die Horizontalen und vertikalen Verschiebungen des Schattens
+                            </li>
+                            <li><span>2px</span> ist der Unschärferadius</li>
+                            <li><span>black</span> ist die Farbe des Schattens</li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <code class="code0">
+                            <p>/* offset-x | offset-y | blur-radius | color */</p>
+                            <p><span class="select1">p</span> <span class="select2">{</span><span class="codee">text-shadow:</span> 1px 1px 2px black <span class="select2">; }</span></p>
+                        </code>
+                        <hr>
+                        <p class="shadow-style">Hello world!</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="text-align">
+                <h3 class="section--title">text-align</h3>
+                <p class="section--description"> Die <code>text-align</code>- Eigenschaft in CSS wird verwendet,
+                    um die horizontale Ausrichtung des Textes innerhalb eines Elements zu steuern.
+                    Hier sind die Werte, die Sie verwenden können:
+                </p>
+                <div class="example--container">
+                    <div class="example--description">
+                        <code>text-align</code>
+                        <ul class="align">
+                            <li><strong>Left:</strong> Der Inhalt wird am linken Rand des Blocks ausgerichtet. Dies ist
+                                der Standardwert, wenn die Textausrichtung von links nach rechts ist</li>
+                            <li><strong>Right:</strong> Der Inhalt wird am rechten Rand des Blocks ausgerichtet. Dies
+                                ist der Standardwert, wenn die Textausrichtung von rechts nach links ist</li>
+                            <li><strong>Center:</strong> Der Inhalt wird in der Mitte des Blocks zentriert</li>
+                            <li><strong>Justify:</strong> Der Inhalt wird so ausgerichtet,
+                                dass die linke und rechte Kante des Blocks ausgefüllt sind.
+                                Jede Zeile hat die gleiche Breite, und die linken und rechten Ränder sind gerade (wie in
+                                Zeitschriften und Zeitungen)
+                            </li>
+                            <li><strong>Start:</strong> Das gleiche wie <span>left</span>,
+                                wenn die Richtung von links nach rechts ist, und <span>right</span>,
+                                wenn die Richtung von rechts nach links ist
+                            </li>
+                            <li><strong>End</strong> Das gleiche wie <span>right</span>,
+                                wenn die Richtung von links nach rechts ist, und <span>left</span>, wenn die Richtung
+                                von rechts nach links ist
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <table class="table3">
+                            <tr>
+                                <td><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-align:</span> left<span class="select2">; }</span></code>
+                                </td>
+                                <td class="tda1">Left</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-align:</span> right<span class="select2">; }</span></code>
+                                </td>
+                                <td class="tda2">right</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-align:</span> center<span class="select2">; }</span></code>
+                                </td>
+                                <td class="tda3">Center</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-align:</span> justify<span class="select2">; }</span></code>
+                                </td>
+                                <td class="tda4">Justify</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-align:</span> start<span class="select2">; }</span></code>
+                                </td>
+                                <td class="tda5">Start</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="select1">p</span> <span class="select2">{</span> <span class="codee">text-align:</span> end<span class="select2">; }</span></code>
+                                </td>
+                                <td class="tda6">End</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+        <aside>
+            <nav>
+                <ul>
+                    <li> <a href="#erklaerung">einleitung</a> </li>
+                    <li> <a href="#color">color & Bakcground</a> </li>
+                    <li><a href="#family">Font-Family</a></li>
+                    <li><a href="#Size">Font-Size</a></li>
+                    <li><a href="#style">Font-Style</a></li>
+                    <li><a href="#Weight">Font-Weight</a></li>
+                    <li><a href="#transform">Text-Transform</a></li>
+                    <li><a href="#decoration">Text-Decoration</a></li>
+                    <li><a href="#shadow">Text-Shadow</a></li>
+                    <li><a href="#text-align">Text-Align</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+
+    <footer> Ibrahim Bashar</footer>
+</body>
+
+
+</html>

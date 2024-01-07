@@ -1,0 +1,28 @@
+
+
+article {
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid var(--articleColor);
+    overflow: hidden;
+}
+
+article .article--title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:var(--secondaryColor);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+article .article--title::after {
+    content: "";
+    position: absolute;
+    padding: .5px 70%;
+    left: 0%;
+    bottom: 0%;
+    background-color: var(--secondaryColor);
+}
+

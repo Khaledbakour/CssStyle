@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ROOT STYLE   -->
+    <link rel="stylesheet" href="../../styles/root.css">
+    <!--  STYLE OF THE PAGE   -->
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
+</head>
+
+
+<body>
+
+    <header>
+        <img id="logo" src="../../assets/logo.png" alt="">
+        <nav class="pages--navigation">
+            <ul>
+                <li><a href="../text-Styling/text-Styling.html">
+                        <span class="material-icons">
+                            text_format
+                        </span>
+                        text
+                    </a>
+                </li>
+                <li><a href="../grid/grid.html">
+                        <span class="material-icons">
+                            space_dashboard
+                        </span>
+                        grid
+                    </a>
+                </li>
+                <li><a class="active" href="../flexbox/flexbox.html">
+                        <span class="material-icons">
+                            view_day
+                        </span>
+                        flexbox
+                    </a>
+                </li>
+                <li><a href="../CSS Posotion/position.html">
+                    <span class="material-icons">
+                       add_location
+                    </span>
+                    position
+
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 class="article--title">Flexbox Layout</h2>
+            <section id="introductIon">
+                <h3 class="section--title">Einleitung</h3>
+                <p class="section--description">
+                    Flexbox ist eine CSS-Layout-Methode, die es ermöglicht, Elemente in einer flexiblen und responsiven
+                    Weise zu positionieren. Im Gegensatz zu älteren Layout-Methoden wie Floats oder Tabellen, die
+                    statisch sind und auf bestimmte Bildschirmgrößen angewiesen sind, passt sich Flexbox an die Größe
+                    des Bildschirms an und sorgt dafür, dass die Elemente immer sichtbar sind</p>
+            </section>
+            <!--//////////////// JUSTIFY-DIRECTION////////////////// -->
+            <section id="flex-direction">
+                <h3 class="section--title">Flex Direction</h3>
+                <p class="section--description">
+                    Mit der <code>flex-direction</code>-Eigenschaft kann die Richtung der Hauptachse ausgewählt werden,
+                    in der die flexiblen Elemente angeordnet werden.
+                </p>
+                <div class="example--container ">
+                    <p class="example--description">
+                        <code>flex-direction: row</code> legt fest, dass die flexiblen Elemente entlang der horizontalen
+                        Achse (von links nach rechts) angeordnet werden:
+                    </p>
+                    <div class="example" id="flex-direction--row">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container ">
+                    <p class="example--description">
+                        <code>flex-direction: row-reverse</code> legt fest, dass die flexiblen Elemente entlang der
+                        umgekehrten horizontalen Achse (von rechts nach links) angeordnet werden:
+                    </p>
+                    <div class="example" id="flex-direction--row--reverse">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <p class="example--description">
+                        <code>flex-direction: column</code> egt fest, dass die flexiblen Elemente entlang der vertikalen
+                        Achse (von oben nach unten) angeordnet werden
+                    </p>
+                    <div class="example" id="flex-direction--column">
+
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container ">
+                    <p class="example--description">
+                        <code>flex-direction: column-reverse</code> legt fest, dass die flexiblen Elemente entlang der
+                        umgekehrten vertikalen Achse (von unten nach oben) angeordnet werden:
+                    </p>
+                    <div class="example" id="flex-direction--column--reverse">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+
+            </section>
+            <!--//////////////// FLEX-WARP/////////////////// -->
+            <section id="flex-warp">
+                <h3 class="section--title">Flex Warp</h3>
+                <p class="section--description"> Mit der <code>flex-warp</code>-Eigenschaft kann festgelegt werden, ob
+                    die flexiblen Elemente entlang der Hauptachse in mehrere Zeilen aufgeteilt werden sollen oder nicht.
+                </p>
+                <div class="example--container ">
+                    <p class="example--description">
+                        <code>flex-warp: nowarp</code>
+                        legt fest, dass die flexiblen Elemente entlang der Hauptachse in einer einzigen Zeile angeordnet
+                        werden, wenn sie zu lang sind.
+                    </p>
+                    <div class="example">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <p class="example--description">
+                        <code>flex-warp: warp</code> legt fest, dass die flexiblen Elemente entlang der Hauptachse in
+                        mehrere Zeilen aufgeteilt werden können, wenn sie zu lang sind.
+                    </p>
+                    <div class="example" id="flex-warp--warp">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container">
+                    <p class="example--description">
+                        <code>flex-warp: warp-reverse</code> egt fest, dass die flexiblen Elemente entlang der
+                        Hauptachse in mehrere Zeilen aufgeteilt werden können, wenn sie zu lang sind. Die Reihen werden
+                        dann in umgekehrter Reihenfolge angeordnet.
+                    </p>
+                    <div class="example" id="flex-warp--warp--reverse">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+            </section>
+            <!--//////////////// JUSTIFY-CONTENT/////////////////// -->
+            <section id="justify-content">
+                <h3 class="section--title">justify-content</h3>
+                <p class="section--description"> Mit der <code>justify-content</code>-Eigenschaft wird festgelegt, wie
+                    die flexiblen Elemente entlang der Hauptachse ausgerichtet werden.
+                </p>
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>justify-content:space-between </code> legt fest, dass die flexiblen Elemente entlang der
+                        Hauptachse gleichmäßig verteilt werden, wobei der gleiche Abstand zwischen den Elementen und
+                        nach dem letzten Element eingehalten wird.
+                    </p>
+                    <div class="example" id="justify-content--space--between">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>justify-content:space-around </code> legt fest, dass die flexiblen Elemente entlang der
+                        Hauptachse gleichmäßig verteilt werden, wobei der gleiche Abstand zwischen den Elementen und vor
+                        und nach dem letzten Element eingehalten wird.
+                    </p>
+                    <div class="example" id="justify-content--space--around">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>justify-content:center </code> legt fest, dass die flexiblen Elemente entlang der
+                        Hauptachse in der Mitte des Containers ausgerichtet werden:
+                    </p>
+                    <div class="example" id="justify-content--center">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>justify-content:end </code> legt fest, dass die flexiblen Elemente entlang der Hauptachse
+                        am Ende des Containers ausgerichtet werden:
+                    </p>
+                    <div class="example" id="justify-content--end">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                    </div>
+                </div>
+
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>justify-content:start </code>legt fest, dass die flexiblen Elemente entlang der Hauptachse
+                        am Anfang des Containers ausgerichtet werden. Dies ist die Standardeinstellung:
+                    </p>
+                    <div class="example" id="justify-content--start">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+
+            </section>
+            <!--//////////////// ALIGN-ITEMS/////////////////// -->
+            <section id="align-items">
+                <h3 class="section--title">align-items</h3>
+                <p class="section--description"><code>align-items</code>
+                    legt die Ausrichtung der Flex-Elemente entlang der Querachse fest. Die Querachse ist die Achse, die
+                    senkrecht zur Hauptachse verläuft.
+                </p>
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>align-items:stretch</code> wird verwendet, um eine Vielzahl von Layouts zu erstellen. Zum
+                        Beispiel kann sie verwendet werden, um ein Bild oder einen Textblock so zu positionieren, dass
+                        er die volle Höhe des Flex-Containers ausfüllt.
+                    </p>
+                    <div class="example" id="align-items--stretch">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>align-items:center </code> richtet die Flex-Elemente entlang der Querachse zentriert an:
+                    </p>
+                    <div class="example" id="align-items--center">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>align-items:start </code> richtet die Flex-Elemente entlang der Querachse am Anfang an:
+                    </p>
+                    <div class="example" id="align-items--start">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+                <div class="example--container   ">
+                    <p class="example--description">
+                        <code>align-items:end </code> richtet die Flex-Elemente entlang der Querachse am Ende an:
+                    </p>
+                    <div class="example" id="align-items--end">
+                        <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <nav>
+                <ul>
+                    <li> <a href="#introductIon">einleitung</a> </li>
+                    <li> <a href="#flex-direction">flex-direction</a> </li>
+                    <li><a href="#flex-warp">flex-wrap</a></li>
+                    <li><a href="#justify-content">justify-content</a></li>
+                    <li><a href="#align-items">align-items</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer> @khaled Bakour </footer>
+</body>
+
+
+</html>

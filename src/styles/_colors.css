@@ -1,0 +1,22 @@
+:root {
+
+    /* main colors*/
+    --primaryColor: white;
+    --secondaryColor: rgb(0, 136, 255);
+    --thirtyColor: rgb(118, 187, 247);
+    --textColor:#000;
+
+    --bodyBgColor: white;
+    --linearColor: var(--secondaryColor), var(--thirtyColor), var(--secondaryColor);
+
+    --headerBoxShadowColor: gray;
+
+
+    --articleColor: rgb(219, 238, 255);
+
+    
+
+
+
+
+}

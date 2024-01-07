@@ -1,0 +1,96 @@
+:root {
+    --secondaryColor: rgb(232, 152, 4);
+    --thirtyColor: rgb(237, 194, 114);
+    --articleColor: rgb(249, 236, 216);
+
+}
+
+.example--container .example {
+    display: flex;
+
+}
+
+.example--container .example span {
+    background-color: white;
+    margin: 5px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7px;
+
+}
+
+/* Flex-direction */
+#flex-direction--column {
+    flex-direction: column;
+
+}
+
+#flex-direction--column--reverse {
+    flex-direction: column-reverse;
+
+}
+
+#flex-direction--row--reverse {
+    flex-direction: row-reverse;
+}
+
+/* Flex-warp */
+
+#flex-warp .example--container .example {
+    width: 200px;
+}
+
+#flex-warp--warp {
+    flex-wrap: wrap;
+}
+
+#flex-warp--warp--reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/* justify-content */
+
+
+#justify-content--space--between {
+    justify-content: space-between;
+}
+
+#justify-content--space--around {
+    justify-content: space-around;
+
+}
+
+#justify-content--center {
+    justify-content: center;
+}
+
+#justify-content--end {
+    justify-content: end;
+}
+
+#justify-content--start {
+    justify-content: start;
+
+}
+
+#align-items .example span:nth-last-of-type(1) {
+    height: 60px;
+    line-height: 60px;
+}
+
+#align-items--stretch {
+    align-items: stretch;
+}
+
+#align-items--center {
+    align-items: center;
+}
+
+#align-items--start {
+    align-items: start;
+}
+
+#align-items--end {
+    align-items: end;
+}

@@ -1,0 +1,344 @@
+.codee {
+    color: rgb(7, 160, 28);
+}
+
+.select1 {
+    color: #bd0101;
+}
+
+.select2 {
+    color: rgb(0, 0, 0);
+}
+
+.comment {
+    color: grey;
+}
+
+aside {
+    top: 12%;
+}
+
+section .example--container .example--description .example,
+p {
+    font-family: none;
+    font-size: 18px;
+}
+
+section .example--container .example--description {
+    display: inline-block;
+    border: 2px solid var(--secondaryColor);
+    padding: 5px;
+    margin-bottom: 10px;
+    min-width: 1150px;
+    background-color: white;
+}
+
+section .example--container .example--description ul li {
+    list-style-type: circle;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+section .example--container2 {
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+section .example--container2:first-of-type {
+    margin-top: 10px;
+}
+
+section .example--container2 .example--description2 {
+    display: inline-block;
+    border: 2px solid var(--secondaryColor);
+    padding: 5px;
+    margin-bottom: 10px;
+    max-width: 1150px;
+    background-color: white;
+}
+
+section .example--container2 .example2 {
+    margin-left: 15px;
+    padding: 20px;
+    background-color: var(--articleColor);
+    border-radius: 9px;
+    /*min-height: 100px;*/
+    height: 100%;
+}
+
+section .example--container .example .span1 {
+    margin-left: 0px;
+    padding: 20px;
+    background-color: var(--articleColor);
+    border-radius: 9px;
+    min-height: 100px;
+    line-height: 100px;
+    color: red;
+}
+
+section .example--container .example .span2 {
+    margin-left: 0px;
+    padding: 20px;
+    background-color: var(--articleColor);
+    border-radius: 9px;
+    min-height: 100px;
+    line-height: 100px;
+    background-color: white;
+}
+
+section .example--container .example img {
+    width: 20%;
+    height: 20%;
+}
+
+section .example--container .example--description ul {
+    list-style-type: circle;
+}
+
+section .example--container .example .span3 {
+    margin-left: 0px;
+    padding: 20px;
+    background-color: var(--articleColor);
+    border-radius: 9px;
+    min-height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table1,
+.table2 {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 20px;
+    height: 500px;
+    width: 50%;
+}
+
+.table1,
+.table2,
+th,
+td {
+    border: 3px solid rgb(0, 136, 255);
+    text-align: center;
+}
+
+.table1,
+.table2 td {
+    font-size: 18px;
+}
+
+.table3 {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 20px;
+    height: 500px;
+    width: 50%;
+
+}
+
+.table3,
+td {
+    border: 3px solid rgb(0, 136, 255);
+    text-align: center;
+    width: 40%;
+    font-family: none;
+}
+
+
+.tda1 {
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+
+.tda2 {
+    text-align: right;
+    padding: 0px 10px 0px 0px;
+}
+
+.tda3 {
+    text-align: center;
+}
+
+.tda4 {
+    text-align: justify;
+    padding: 0px 0px 0px 10px;
+}
+
+.tda5 {
+    text-align: start;
+    padding: 0px 0px 0px 10px;
+}
+
+.tda6 {
+    text-align: end;
+    padding: 0px 10px 0px 0px;
+}
+
+.Hallostyle {
+    font-style: normal;
+}
+
+.Hallostyle2 {
+    font-style: italic;
+}
+
+.Hallostyle3 {
+    font-style: oblique;
+}
+
+.Halloweight {
+    font-weight: normal;
+}
+
+.Halloweight2 {
+    font-weight: bold;
+}
+
+.Halloweight3 {
+    font-weight: lighter;
+}
+
+.Halloweight4 {
+    font-weight: bolder;
+}
+
+.td1 {
+    font-weight: 100;
+}
+
+.td2 {
+    font-weight: 200;
+}
+
+.td3 {
+    font-weight: 300;
+}
+
+.td4 {
+    font-weight: 400;
+}
+
+.td5 {
+    font-weight: 500;
+}
+
+.td6 {
+    font-weight: 600;
+}
+
+.td7 {
+    font-weight: 700;
+}
+
+.td8 {
+    font-weight: 800;
+}
+
+.td9 {
+    font-weight: 900;
+}
+
+.transform1 {
+    text-transform: none;
+}
+
+.transform2-1 {
+    text-transform: capitalize;
+}
+
+.arrow {
+    display: flex;
+}
+
+.arrow .transform2,
+.fa-solid,
+.transform2-1 {
+    margin-right: 3%;
+}
+
+.arrow .decoration1,
+.fa-solid,
+.decoration1-1 {
+    margin-right: 3%;
+}
+
+.arrow .fa-solid {
+    margin-top: 3%;
+}
+
+.Upper1 {
+    text-transform: uppercase;
+}
+
+.Upper2 {
+    text-transform: lowercase;
+}
+
+.decoration1-1 {
+    text-decoration: overline;
+}
+
+.decoration1-2 {
+    text-decoration: underline;
+}
+
+.decoration-color {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+
+.wave {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.thickness {
+    text-decoration-line: underline;
+    text-decoration-thickness: 25%;
+}
+
+.shorthand {
+    text-decoration: underline red double 5px;
+}
+
+.shadow-list span {
+    background-color: #e1dfdf;
+    border: 1px solid #bebebe;
+    margin: 0px 2px;
+    padding: 1px 4px;
+    box-sizing: border-box;
+    font-family: none;
+}
+
+.align span {
+    background-color: #e1dfdf;
+    border: 1px solid #bebebe;
+    margin: 0px 2px;
+    padding: 1px 4px;
+    box-sizing: border-box;
+    font-family: none;
+}
+
+#decoration p:first-of-type span {
+    background-color: #e1dfdf;
+    border: 1px solid #bebebe;
+    margin: 0px 2px;
+    padding: 1px 4px;
+    box-sizing: border-box;
+    font-family: none;
+}
+
+.code0 {
+    line-height: 30px;
+}
+
+.code0 p:first-of-type {
+    color: #74797e;
+}
+
+.shadow-style {
+    text-shadow: 1px 1px 2px black;
+}
